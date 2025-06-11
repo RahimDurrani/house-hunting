@@ -138,9 +138,9 @@
      </div>
 
      <!-- cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto bg-white text-orange-500 w-full p-15">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto  bg-white text-orange-500 w-full p-15">
     <!-- Search By Distance -->
-    <div class="border rounded-lg p-4 shadow-sm">
+    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
       <h2 class="text-lg font-semibold mb-4 text-black">Search By Distance</h2>
       <select class="w-full border rounded px-3 py-2 mb-2">
         <option>Span</option>
@@ -148,14 +148,15 @@
       <div class="flex gap-2 mb-2">
         <select class="w-1/3 border rounded px-3 py-2">
           <option>KM</option>
+          <option >Miles</option>
         </select>
         <input type="text" placeholder="Distance" class="w-2/3 border rounded px-3 py-2" />
       </div>
-      <button class="bg-orange-500 text-white rounded px-4 py-2 w-full">Search</button>
+      <button class="bg-orange-500 text-white rounded px-4 py-2 w-28">Search</button>
     </div>
 
     <!-- Search By Reservation -->
-    <div class="border rounded-lg p-4 shadow-sm">
+    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
       <h2 class="text-lg font-semibold mb-4 text-black">Search By Reservation</h2>
       <select class="w-full border rounded px-3 py-2 mb-2">
         <option>Property</option>
@@ -164,18 +165,18 @@
         <input type="date" class="w-1/2 border rounded px-3 py-2" placeholder="Check In" />
         <input type="date" class="w-1/2 border rounded px-3 py-2" placeholder="Check Out" />
       </div>
-      <button class="bg-orange-500 text-white rounded px-4 py-2 w-full">Search</button>
+      <button class="bg-orange-500 text-white rounded px-4 py-2 w-28">Search</button>
     </div>
 
     <!-- Search By Reference Number -->
-    <div class="border rounded-lg p-4 shadow-sm">
+    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
       <h2 class="text-lg font-semibold mb-4 text-black">Search By ReferanceNumber</h2>
       <input type="text" placeholder="Referances Number" class="w-full border rounded px-3 py-2 mb-2" />
-      <button class="bg-orange-500 text-white rounded px-4 py-2 w-full">Search</button>
+      <button class="bg-orange-500 text-white rounded px-4 py-2 w-28">Search</button>
     </div>
 
     <!-- Publishing Listing -->
-    <div class="border rounded-lg p-4 shadow-sm">
+    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
       <h2 class="text-lg font-semibold mb-2 text-black">Publishing Your Listing For Free</h2>
       <p class="text-sm text-orange-500 mb-4 ">Everything you need for a professional listing. Is right here and there are no limits!</p>
       <button class="bg-orange-500 text-white rounded px-4 py-2 w-full">Add Your Listing For Free</button>
@@ -183,9 +184,42 @@
   </div>
 
   <!-- Draw Area Button -->
-  <div class="flex justify-center mt-6">
-    <button class="bg-orange-500 text-white rounded px-6 py-2">Draw Area on Map</button>
+  <div class="flex justify-center  mt-6">
+    <button class="bg-orange-500 cursor-pointer hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 w-[500px] py-2">Draw Area on Map</button>
   </div>
+<!-- Overlay Card -->
+
+<div class=" bg-white p-12 ml-72 gird  ">
+  <div class="relative z-50  ">
+    <img src="images/Mask Group.png" alt="Real Estate Tool" class="w-3xl rounded-md shadow-lg" />
+      <div class="absolute top-10 left-48 z-10 bg-orange-500 text-white  p-6 ml-80 rounded-md max-w-sm shadow-lg">
+    <h2 class="text-xl font-bold mb-2">No. 1 Real Estate Tool</h2>
+    <p class="text-sm mb-4">
+      The leading functions for professional real estate agents. All our functions are made to give the individuals
+      agents the most successful listing creation.
+    </p>
+    <div class="flex items-center justify-between">
+      <button class="bg-white text-orange-500 text-sm font-semibold px-4 py-2 rounded-l-lg shadow">
+        Learn more
+      </button>
+      <img src="images/qr-code 1.png" alt="QR Code" class="w-20 h-20 bg-white rounded-md p-2" />
+    </div>
+  </div>
+  </div>  
+</div>
+
+<div class=" bg-white p-12 ml-72 ">
+  <div class="relative z-50  ">
+          <div class="absolute top-10 right-48 z-10 bg-orange-500 text-white  p-6 ml-80 rounded-md w-[650px] max-w-sm shadow-lg">
+    <h2 class="text-xl font-bold mb-2">No. 1 Real Estate Tool</h2>
+    <p class="text-sm mb-4">
+    The leading functions for professional real estate agents. All our functions are made to give the individuals agents the most successful listing creation,
+     import, market analytics, professional marketing, booking, remote adverts, price indicators and so much.
+    </p>
+  </div>
+    <img src="images/Data-analytics-chart-laptop 1.png" alt="Real Estate Tool" class="w-3xl rounded-md shadow-lg" />
+  </div>  
+</div>
 
   </body>
 </html>
