@@ -13,187 +13,169 @@
     <title>housing hunt</title>
   </head>
   <body class="text-white  ">
-    <div class="flex justify-between items-center p-4 bg-white text-black">
-      <div class="flex gap-4 items-center">
+   <div class="bg-white text-black p-4">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <!-- Left Side -->
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+      <div class="flex items-center gap-2">
         <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
         <p class="text-orange-500">English</p>
-        <div class="flex items-center gap-1">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-orange-500 size-6">
-  <path d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
-  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z" clip-rule="evenodd" />
-</svg>
-
-
-          <span class="text-orange-500">MARBELLA</span>
-        </div>
-        <div class="flex items-center gap-1">
-          <select class="text-orange-500" name="" id="">
-            <option value="">€</option>
-            <option value="">$</option>
-            <option value="">£</option>
-            <option value="">¥</option>
-            <option value="">Rs</option>
-          </select>
-        </div>
       </div>
-      <div class="flex items-center cursor-pointer gap-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-7 w-7 bg-orange-500 rounded-full text-white"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-6 8a6 6 0 1112 0H4z" />
+
+      <div class="flex items-center gap-1">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="text-orange-500 w-6 h-6">
+          <path d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
+          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z" clip-rule="evenodd" />
         </svg>
-        <span class="text-orange-500">Sign In</span>
+        <span class="text-orange-500">MARBELLA</span>
       </div>
-    </div>
-    <!-- banner -->
 
-    <div class="flex justify-between items-center p-4 bg-orange-500">
-      <div class="flex gap-4 items-center">
-        <img src="images/logo 1.png" alt="" />
+      <select class="text-orange-500 border border-orange-300 rounded px-2 py-1">
+        <option>€</option>
+        <option>$</option>
+        <option>£</option>
+        <option>¥</option>
+        <option>Rs</option>
+      </select>
+    </div>
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-2 cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 bg-orange-500 rounded-full text-white p-1" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-6 8a6 6 0 1112 0H4z" />
+      </svg>
+      <span class="text-orange-500">Sign In</span>
+    </div>
+  </div>
+</div>
+ <!-- banner -->
+
+   <!-- Header with Logo and Add Listing -->
+<div class="flex flex-col sm:flex-row justify-between items-center p-4 bg-orange-500 gap-4">
+  <div>
+    <img src="images/logo 1.png" alt="Logo" class="w-32 h-auto" />
+  </div>
+  <div
+    class="flex items-center rounded w-36 h-12 justify-center text-orange-500 cursor-pointer bg-white gap-2 hover:bg-orange-500 hover:border-2 hover:border-white hover:text-white transition-all"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </svg>
+    <span>Add Listing</span>
+  </div>
+</div>
+
+<!-- Search Section -->
+<div class="bg-orange-500 text-center py-12 px-4">
+  <!-- Heading -->
+  <h1 class="text-4xl md:text-6xl font-bold text-white opacity-70 mb-8">Search Anywhere</h1>
+
+  <!-- Search Form -->
+  <div class="flex justify-center">
+    <form class="bg-white  rounded-lg p-4 h-full w-7xl flex flex-col md:flex-row items-center gap-4 md:gap-6">
+      <!-- Buy / Rent Buttons -->
+      <div class="flex">
+        <button
+          class="rounded-l-md bg-white border border-orange-500 text-orange-500 w-20 h-12 hover:bg-slate-700 hover:text-white transition">
+          Buy
+        </button>
+        <button
+          class="rounded-r-md bg-white border border-orange-500 text-orange-500 w-20 h-12 hover:bg-slate-700 hover:text-white transition">
+          Rent
+        </button>
       </div>
-      <div
-        class="flex items-center rounded w-36 h-12 justify-center-safe hover:border-2 hover:border-white  hover:text-white text-orange-500 cursor-pointer hover:bg-orange-500  bg-white gap-2"
-      >
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="size-6 "
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-          />
-        </svg>
+      <!-- Property Type Dropdown -->
+      <select
+        class="rounded bg-white cursor-pointer border border-orange-500 text-orange-500 w-28 h-12">
+        <option>Home</option>
+        <option>Studio</option>
+        <option>1BHK</option>
+        <option>2BHK</option>
+      </select>
 
-        <span class="">Add Listing</span>
+      <!-- Search Input & Button -->
+      <div class="flex flex-col md:flex-row items-center gap-2 flex-1">
+        <input type="search" placeholder="Search for place..."
+          class="p-3 text-sm text-orange-500 border border-orange-500 rounded w-full md:w-[450px] h-12"
+          required />
+        <button
+          type="submit"
+          class="text-white bg-orange-500 border border-orange-500 rounded-2xl w-24 h-12 hover:bg-white hover:text-orange-500 transition">
+          Search
+        </button>
       </div>
-    </div>
+    </form>
+  </div>
 
-    <!-- from -->
-    <div class="grid grid-cols-1 h-[500px]  bg-orange-500">
-      <h1 class="flex text-6xl font-bold justify-center-safe opacity-45">
-        Search AnyWhere
-      </h1>
-   
-    <div class="flex justify-center mt-16">
-      <form action="" class="flex justify-center items-center bg-white h-36 w-7xl">
-        <div class="flex">
-          <button
-            class="rounded-md cursor-pointer rounded-r-none bg-white border-orange-500 border-2 text-orange-500 w-20 h-12 shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            Buy
-          </button>
-
-          <button
-            class="rounded-md cursor-pointer rounded-l-none bg-white border-orange-500 border-2 text-orange-500 w-20 h-12 shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-            type="button"
-          >
-            Rent
-          </button>
-        </div>
-
-        <select
-          name=""
-          class="rounded bg-white cursor-pointer border-orange-500 border-2 text-orange-500 w-28 ml-5 h-12"
-          id=""
-        >
-          <option value="">Home</option>
-          <option value="">Studio</option>
-          <option value="">1BHK</option>
-          <option value="">2BHk</option>
-        </select>
-        <div class="flex gap-3 ml-4">
-
-          <input 
-            type="search"
-            id="default-search"
-            class="block p-4 ps-10 text-sm text-orange-500 border border-orange-500 rounded-lg w-[650px] h-12"
-            placeholder="Search for place..."
-            required
-          />
-          <button
-            type="submit"
-            class="text-white cursor-pointer bg-orange-500 rounded-2xl border-2 border-orange-500 w-20  hover:bg-white hover:text-orange-500"
-          >
-            Search
-          </button>
-        </div>
-      </form>
-    </div>
-    <div class="flex justify-center-safe">
-      <h6>
-        <span class="text-black">Your last search:</span>
-        <span class="text-white"> MARBELLA </span>
-      </h6>
-    </div>
-     </div>
+  <!-- Last Search -->
+  <div class="mt-6 text-sm">
+    <span class="text-black font-medium">Your last search:</span>
+    <span class="text-white font-semibold">MARBELLA</span>
+  </div>
+</div>
 
      <!-- cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-7xl mx-auto  bg-white text-orange-500  p-5">
-    <!-- Search By Distance -->
-    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400" id="distance">
-      <h2 class="text-lg font-semibold mb-4 text-black">Search By Distance</h2>
-      <select class="w-full border rounded px-3 py-2 mb-2">
-        <option>0</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-
+    <!-- Search Options Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-7xl mx-auto bg-white text-orange-500 p-5">
+  
+  <!-- Search By Distance -->
+  <div class="rounded-lg p-4 shadow-sm shadow-orange-400">
+    <h2 class="text-lg font-semibold mb-4 text-black">Search By Distance</h2>
+    <select class="w-full border rounded px-3 py-2 mb-2">
+      <option>0</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+    </select>
+    <div class="flex gap-2 mb-2">
+      <select class="w-1/3 border rounded px-3 py-2">
+        <option>KM</option>
+        <option>Miles</option>
       </select>
-      <div class="flex gap-2 mb-2">
-        <select class="w-1/3 border rounded px-3 py-2">
-          <option>KM</option>
-          <option >Miles</option>
-        </select>
-        <input type="text" placeholder="Distance" class="w-2/3 border rounded px-3 py-2" />
-      </div>
-      <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 cursor-pointer rounded px-4 py-2 w-28">Search</button>
+      <input type="text" placeholder="Distance" class="w-2/3 border rounded px-3 py-2" />
     </div>
-
-    <!-- Search By Reservation -->
-    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
-      <h2 class="text-lg font-semibold mb-4 text-black">Search By Reservation</h2>
-      <select class="w-full border rounded px-3 py-2 mb-2">
-        <option>Property</option>
-      </select>
-      <div class="flex gap-2 mb-2">
-        <input type="date" class="w-1/2 border rounded px-3 py-2" placeholder="Check In" />
-        <input type="date" class="w-1/2 border rounded px-3 py-2" placeholder="Check Out" />
-      </div>
-      <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 cursor-pointer rounded px-4 py-2 w-28">Search</button>
-    </div>
-
-    <!-- Search By Reference Number -->
-    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
-      <h2 class="text-lg font-semibold mb-4 text-black">Search By ReferanceNumber</h2>
-      <input type="text" placeholder="Referances Number" class="w-full border rounded px-3 py-2 mb-2"  />
-      <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 cursor-pointer rounded px-4 py-2 w-28">Search</button>
-    </div>
-
-    <!-- Publishing Listing -->
-    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
-      <h2 class="text-lg font-semibold mb-2 text-black">Publishing Your Listing For Free</h2>
-      <p class="text-sm text-orange-500 mb-4 ">Everything you need for a professional listing. Is right here and there are no limits!</p>
-      <button class="bg-orange-500 text-white  hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 cursor-pointer rounded px-4 py-2 w-full">Add Your Listing For Free</button>
-    </div>
+    <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 rounded px-4 py-2 w-28 transition-all">Search</button>
   </div>
 
-  <!-- Draw Area Button -->
-  <div class="flex justify-center  mt-6">
-    <button class="bg-orange-500 cursor-pointer hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 w-[700px] py-2">Draw Area on Map</button>
+  <!-- Search By Reservation -->
+  <div class="rounded-lg p-4 shadow-sm shadow-orange-400">
+    <h2 class="text-lg font-semibold mb-4 text-black">Search By Reservation</h2>
+    <select class="w-full border rounded px-3 py-2 mb-2">
+      <option>Property</option>
+    </select>
+    <div class="flex flex-col sm:flex-row gap-2 mb-2">
+      <input type="date" class="w-full sm:w-1/2 border rounded px-3 py-2" placeholder="Check In" />
+      <input type="date" class="w-full sm:w-1/2 border rounded px-3 py-2" placeholder="Check Out" />
+    </div>
+    <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 rounded px-4 py-2 w-28 transition-all">Search</button>
   </div>
+
+  <!-- Search By Reference Number -->
+  <div class="rounded-lg p-4 shadow-sm shadow-orange-400">
+    <h2 class="text-lg font-semibold mb-4 text-black">Search By Reference Number</h2>
+    <input type="text" placeholder="Reference Number" class="w-full border rounded px-3 py-2 mb-2" />
+    <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 rounded px-4 py-2 w-28 transition-all">Search</button>
+  </div>
+
+  <!-- Publishing Listing -->
+  <div class="rounded-lg p-4 shadow-sm shadow-orange-400">
+    <h2 class="text-lg font-semibold mb-2 text-black">Publishing Your Listing For Free</h2>
+    <p class="text-sm text-orange-500 mb-4">Everything you need for a professional listing is right here—and there are no limits!</p>
+    <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 w-full rounded px-4 py-2 transition-all">Add Your Listing For Free</button>
+  </div>
+</div>
+
+<!-- Draw Area Button -->
+<div class="flex justify-center mt-6 px-4">
+  <button class="bg-orange-500 hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 py-2 w-full max-w-3xl transition-all">Draw Area on Map</button>
+</div>
+
 <!-- Overlay Card -->
 
 <div class=" bg-white p-6  " id="About">
@@ -235,470 +217,418 @@
 
 <!-- featured list -->
 
-<div class="flex justify-between items-center p-5 bg-white text-black">
-      <div class="flex gap-4 items-center p-7">
-        <h2 class="text-slate-500 font-bold text-3xl" >Featured Property</h2>
-      </div>
-      <div class="flex items-center cursor-pointer mr-20  gap-2">
-   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-</svg>
-
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-</svg>
-
-      </div>
-
-    </div>
-    <!-- featured cards -->
-      <div class="grid grid-cols-3 p-10">
-        <!-- Card1 -->
-        <div class="relative">
-
-                  <div class=" relative w-96">
-        <img src="images/Pict.png" alt="">
-        </div>
-        <div class=" absolute  w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"> <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
-      </div>
-    </div>
+<!-- Featured Property Header -->
+<div class="flex flex-col md:flex-row justify-between items-center p-5 bg-white text-black max-w-7xl mx-auto">
+  <h2 class="text-slate-500 font-bold text-3xl mb-4 md:mb-0">Featured Property</h2>
+  <div class="flex items-center cursor-pointer gap-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+    </svg>
   </div>
 </div>
 
+<!-- Property Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
+  <!-- Card1 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-          
-
-      <!-- card2 -->
-
-        <div>
-                  <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+<!-- Card2 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-
-        <!-- card3 -->
-        <div>
-          <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
-        </div>
-    </div>        
 
+
+<!-- Card3 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
 
     <!--  listed as urgent -->
 
-<div class="flex justify-between items-center p-4 bg-white text-black">
-      <div class="flex gap-4 items-center p-7">
-        <h2 class="text-slate-500 font-bold text-3xl" >Listed as urgent</h2>
-      </div>
-      <div class="flex items-center cursor-pointer mr-20 gap-2">
-   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-</svg>
+<div class="flex flex-col md:flex-row justify-between items-center p-5 bg-white text-black max-w-7xl mx-auto">
+  <h2 class="text-slate-500 font-bold text-3xl mb-4 md:mb-0">Featured Property</h2>
+  <div class="flex items-center cursor-pointer gap-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+    </svg>
+  </div>
+</div>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-</svg>
-
-      </div>
-
-    </div>
     <!-- featured cards -->
-      <div class="grid grid-cols-3 p-10">
-        <!-- Card1 -->
-       
-
-        <div>
-                  <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+   <!-- Property Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
+  <!-- Card1 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+<!-- Card2 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-          
-
-      <!-- card2 -->
-
-        <div>
-                  <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+
+<!-- Card3 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-
-        <!-- card3 -->
-        <div>
-          <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
+
+
 </div>
-        </div>
-    </div>
-    
+ 
     
 
     <!-- recently list -->
 
-<div class="flex justify-between items-center p-4 bg-white text-black">
-      <div class="flex gap-4 items-center p-7">
-        <h2 class="text-slate-500 font-bold text-3xl" >Recently Listed</h2>
-      </div>
-      <div class="flex items-center cursor-pointer mr-20 gap-2">
-   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-</svg>
+<div class="flex flex-col md:flex-row justify-between items-center p-5 bg-white text-black max-w-7xl mx-auto">
+  <h2 class="text-slate-500 font-bold text-3xl mb-4 md:mb-0">Featured Property</h2>
+  <div class="flex items-center cursor-pointer gap-4">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+    </svg>
+  </div>
+</div>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" text-orange-500 size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-</svg>
-
-      </div>
-
-    </div>
     <!-- featured cards -->
-      <div class="grid grid-cols-3 p-10">
-        <!-- Card1 -->
-       
-
-        <div>
-          
-                  <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+   <!-- Property Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
+  <!-- Card1 -->
+  <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+<!-- Card2 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-          
-
-      <!-- card2 -->
-
-        <div>
-                  <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+
+<!-- Card3 -->
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
+    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
         </div>
-
-        <!-- card3 -->
-        <div>
-          <div class=" w-96">
-        <img src="images/Pict.png" alt="">
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
-  <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-    <p class="text-orange-500 text-lg font-bold">$375,000</p>
-    <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
-
-    <div class="flex items-center justify-between text-gray-600 mt-4">
-      <div class="flex items-center space-x-1">
-       <img src="images/bathtub.svg" alt="">
-        <span>2 Baths</span>
-      </div>
-      <div class="flex items-center space-x-1">
-       <img src="images/Group.svg" alt="">
-        <span>4 Beds</span>
-      </div>
-      <div class="flex items-center space-x-1">
-        <img src="images/XMLID 874.svg" alt="">
-        <span>2980 sqft</span>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
+        </div>
       </div>
     </div>
   </div>
+
+
 </div>
-        </div>
-    </div>        
 
 
     <!-- advertisment -->
-     <div class="w-full bg-orange-500 text-white grid grid-cols-2">
-      <!-- left -->
-       <div class=" p-28">
-        <h1 class=" text-4xl  font-bold">
-          Buy or Sell Property anytime from anywhere
-        </h1>
-        <p>
-          There are many variations of passages 
-          of Lorem Ipsum available but the majority have suffered alteration
-           in some form by injected humour in the east randomised words slightly believable.
-        </p>
+    <div class="w-full bg-orange-500 text-white py-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center px-6 gap-10">
+    
+    <!-- Left Side Content -->
+    <div>
+      <h1 class="text-4xl font-bold mb-4">
+        Buy or Sell Property Anytime from Anywhere
+      </h1>
+      <p class="mb-6">
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour or randomised words that are slightly believable.
+      </p>
 
-        <div class="mt-2.5">
-          <button class="bg-white text-orange-500 hover:bg-orange-500 hover:text-white hover:border hover:border-white cursor-pointer w-44 h-12">
-        <i class="ri-google-play-line text-2xl">Google Play</i>  
+      <div class="flex flex-wrap gap-4">
+        <button class="flex items-center justify-center bg-white text-orange-500 hover:bg-orange-600 hover:text-white border hover:border-white transition-all w-44 h-12">
+          <i class="ri-google-play-line text-2xl mr-2"></i> Google Play
         </button>
-        
-        <button class="bg-orange-500 text-white border hover:bg-white hover:text-orange-500 cursor-pointer  w-44 h-12">
-        <i class="ri-apple-line text-2xl">Apple Store</i>  
+        <button class="flex items-center justify-center bg-orange-500 text-white border border-white hover:bg-white hover:text-orange-500 transition-all w-44 h-12">
+          <i class="ri-apple-line text-2xl mr-2"></i> Apple Store
         </button>
       </div>
-       </div>
+    </div>
 
-<!-- right -->
- <div class=" flex mt-3  ml-64">
-<img src="images/57923-1 1.png" alt="">
- </div>
-     </div>
+    <!-- Right Side Image -->
+    <div class="flex justify-center">
+      <img src="images/57923-1 1.png" alt="App Preview" class="w-full max-w-md" />
+    </div>
+    
+  </div>
+</div>
 
      <!-- footer -->
 
-    <div class="flex justify-between items-center p-12 bg-white">
-      <div class="flex  items-center ">
-        <img src="images/logo-2 2.png" alt="" />
+   <footer class="bg-white text-black w-full">
+  <!-- Top Section -->
+  <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-12 py-8 border-b border-gray-200 gap-4">
+    <!-- Logo -->
+    <div>
+      <img src="images/logo-2 2.png" alt="Housing Hunt Logo" class="h-10" />
+    </div>
+
+    <!-- Language & Currency -->
+    <div class="flex flex-col sm:flex-row gap-4">
+      <select class="text-black px-4 h-10 border border-gray-300 rounded">
+        <option>English</option>
+        <option>Spanish</option>
+        <option>Chinese</option>
+        <option>Urdu</option>
+      </select>
+      <select class="text-black px-4 h-10 border border-gray-300 rounded">
+        <option>€ EURO</option>
+        <option>$ DOLLAR</option>
+        <option>£ POUNDS</option>
+        <option>¥ YEN</option>
+        <option>PKR RUPEE</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Link Grid Section -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-12 py-10">
+    <!-- MY Housing Hunt -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">MY Housing Hunt</h2>
+      <a href="#About" class="text-slate-600 hover:text-orange-500 block">About Us</a>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Press Room</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Work with Us</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Market Analysis</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Professional Features</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">News</span>
+    </div>
+
+    <!-- Help -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">Help</h2>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">FAQs</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Contact</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Privacy</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Cookie Policy</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">General Conditions</span>
+    </div>
+
+    <!-- Search -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">Search</h2>
+      <a href="#distance" class="text-slate-600 hover:text-orange-500 block">Search by Distance</a>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search on Map</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Specify Search</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search for Reservations</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search by Reference Number</span>
+    </div>
+
+    <!-- Get App -->
+    <div class="space-y-4">
+      <h2 class="font-bold text-lg">Get the App</h2>
+      <!-- App Store -->
+      <div class="flex items-center bg-black rounded-2xl px-4 py-3 w-fit text-white cursor-pointer">
+        <img src="images/apple 2.png" alt="Apple" class="w-6 h-6 mr-3" />
+        <div>
+          <p class="text-xs">Download on the</p>
+          <p class="font-bold text-sm">App Store</p>
+        </div>
       </div>
-      
-    <!-- selection -->
-      <div>
-   
-        <select name="" id="" class="text-black px-8 inset-shadow-sm h-10 w-44">
-          <option value="" class="flex gap-2">
-              <img src="images/flag-1.png" alt=""><span>English</span>
-          </option>
-          <option value="">
-              <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
-        <p class="text-black">spanish</p>
-          </option>
-          <option value="">
-              <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
-        <p class="text-black">Chinease</p>
-          </option>
-
-           <option value="">
-              <span class="fi fi-pk">Urdu</span>
-       
-          </option>
-        </select>
-      
-
-        <select name="" id="" class="text-black px-8 inset-shadow-sm h-10 w-44">
-            <option value="">€ EURO</option>
-            <option value="">$ DOLLAR</option>
-            <option value="">£ POUNDS</option>
-            <option value="">¥ YEN</option>
-            <option value="">PKR RUPPEE</option>
-        </select>
+      <!-- Play Store -->
+      <div class="flex items-center bg-black rounded-2xl px-4 py-3 w-fit text-white cursor-pointer">
+        <img src="images/playstore.png" alt="Play Store" class="w-6 h-6 mr-3" />
+        <div>
+          <p class="text-xs">Download on the</p>
+          <p class="font-bold text-sm">Play Store</p>
+        </div>
       </div>
     </div>
-    <div class="grid grid-cols-4">
-<!-- Hunt -->
- <div class=" p-12 grid gap-2">
-  <h1 class="text-black font-bold">MY Housing Hunt</h1>
-  <a href="#About"><span class="text-slate-600 hover:text-orange-500 cursor-pointer">About Us</span></a>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Press Room</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Work with Us</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Market Analysis</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Proffesional Features</span>
-   <span class="text-slate-600 hover:text-orange-500 cursor-pointer">News</span>
- </div>
-
- <!-- Help -->
- <div class=" p-12 grid gap-2">
-  <h1 class="text-black font-bold">Help</h1>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer ">FAQS</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Contact</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Privacy</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Cookie policiy</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">General conditions</span>
- </div>
-
- <!-- Search -->
- <div class=" p-12 grid gap-2">
-  <h1 class="text-black font-bold">Search</h1>
-<a href="#distance"><span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search By Distance</span></a>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search On Map</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Specify Search</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search For Reservations</span>
-  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search By Referance Number.</span>
- </div>
-<!-- get app -->
-  <div class=" p-12 grid gap-2">
-  <h1 class="text-black font-bold">Get App</h1>
-  <div class="w-70 h-24 bg-black rounded-2xl items-center justify-center flex">
-    <img class="w-15 h-15 mr-3.5" src="images/apple 2.png" alt="">
-    <div class=" ">
-    <p>Download on the</p>
-    <h1 class="font-bold p-1.5">App Store</h1>
-      </div>
   </div>
-  <div class="w-70 h-24 bg-black rounded-2xl items-center justify-center flex">
-    <img class="w-15 h-15 mr-3.5" src="images/playstore.png" alt="">
-    <div class=" ">
-    <p>Download on the</p>
-    <h1 class="font-bold p-1.5">Play Store</h1>
-      </div>
-  </div>
- 
- </div>
-</div>
+</footer>
 
 
   </body>
