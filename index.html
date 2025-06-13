@@ -8,23 +8,22 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/favicon.png" />
     <title>housing hunt</title>
   </head>
-  <body class="text-white ">
+  <body class="text-white  ">
     <div class="flex justify-between items-center p-4 bg-white text-black">
       <div class="flex gap-4 items-center">
         <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
         <p class="text-orange-500">English</p>
         <div class="flex items-center gap-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4 text-orange-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10 20s6-5.33 6-10a6 6 0 10-12 0c0 4.67 6 10 6 10z" />
-          </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-orange-500 size-6">
+  <path d="M15.75 8.25a.75.75 0 0 1 .75.75c0 1.12-.492 2.126-1.27 2.812a.75.75 0 1 1-.992-1.124A2.243 2.243 0 0 0 15 9a.75.75 0 0 1 .75-.75Z" />
+  <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM4.575 15.6a8.25 8.25 0 0 0 9.348 4.425 1.966 1.966 0 0 0-1.84-1.275.983.983 0 0 1-.97-.822l-.073-.437c-.094-.565.25-1.11.8-1.267l.99-.282c.427-.123.783-.418.982-.816l.036-.073a1.453 1.453 0 0 1 2.328-.377L16.5 15h.628a2.25 2.25 0 0 1 1.983 1.186 8.25 8.25 0 0 0-6.345-12.4c.044.262.18.503.389.676l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 0 1-1.161.886l-.143.048a1.107 1.107 0 0 0-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 0 1-1.652.928l-.679-.906a1.125 1.125 0 0 0-1.906.172L4.575 15.6Z" clip-rule="evenodd" />
+</svg>
+
+
           <span class="text-orange-500">MARBELLA</span>
         </div>
         <div class="flex items-center gap-1">
@@ -32,7 +31,7 @@
             <option value="">€</option>
             <option value="">$</option>
             <option value="">£</option>
-            <option value="">ca$</option>
+            <option value="">¥</option>
             <option value="">Rs</option>
           </select>
         </div>
@@ -58,6 +57,7 @@
       <div
         class="flex items-center rounded w-36 h-12 justify-center-safe hover:border-2 hover:border-white  hover:text-white text-orange-500 cursor-pointer hover:bg-orange-500  bg-white gap-2"
       >
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -84,7 +84,7 @@
       </h1>
    
     <div class="flex justify-center mt-16">
-      <form action="" class="flex justify-center items-center bg-white h-36 w-5xl">
+      <form action="" class="flex justify-center items-center bg-white h-36 w-7xl">
         <div class="flex">
           <button
             class="rounded-md cursor-pointer rounded-r-none bg-white border-orange-500 border-2 text-orange-500 w-20 h-12 shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -116,13 +116,13 @@
           <input 
             type="search"
             id="default-search"
-            class="block p-4 ps-10 text-sm text-orange-500 border border-orange-500 rounded-lg w-96 h-10"
+            class="block p-4 ps-10 text-sm text-orange-500 border border-orange-500 rounded-lg w-[650px] h-12"
             placeholder="Search for place..."
             required
           />
           <button
             type="submit"
-            class="text-white cursor-pointer bg-orange-500 rounded-2xl border-2 border-orange-500 w-20 hover:bg-white hover:text-orange-500"
+            class="text-white cursor-pointer bg-orange-500 rounded-2xl border-2 border-orange-500 w-20  hover:bg-white hover:text-orange-500"
           >
             Search
           </button>
@@ -138,12 +138,19 @@
      </div>
 
      <!-- cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto  bg-white text-orange-500 w-full p-15">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 w-7xl mx-auto  bg-white text-orange-500  p-5">
     <!-- Search By Distance -->
-    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
+    <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400" id="distance">
       <h2 class="text-lg font-semibold mb-4 text-black">Search By Distance</h2>
       <select class="w-full border rounded px-3 py-2 mb-2">
-        <option>Span</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+
       </select>
       <div class="flex gap-2 mb-2">
         <select class="w-1/3 border rounded px-3 py-2">
@@ -171,7 +178,7 @@
     <!-- Search By Reference Number -->
     <div class="border-0 rounded-lg p-4 shadow-sm shadow-orange-400">
       <h2 class="text-lg font-semibold mb-4 text-black">Search By ReferanceNumber</h2>
-      <input type="text" placeholder="Referances Number" class="w-full border rounded px-3 py-2 mb-2" />
+      <input type="text" placeholder="Referances Number" class="w-full border rounded px-3 py-2 mb-2"  />
       <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 cursor-pointer rounded px-4 py-2 w-28">Search</button>
     </div>
 
@@ -185,49 +192,54 @@
 
   <!-- Draw Area Button -->
   <div class="flex justify-center  mt-6">
-    <button class="bg-orange-500 cursor-pointer hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 w-[500px] py-2">Draw Area on Map</button>
+    <button class="bg-orange-500 cursor-pointer hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 w-[700px] py-2">Draw Area on Map</button>
   </div>
 <!-- Overlay Card -->
 
-<div class=" bg-white p-12 ml-72 gird  ">
-  <div class="relative z-50  ">
-    <img src="images/Mask Group.png" alt="Real Estate Tool" class="w-3xl rounded-md shadow-lg" />
-      <div class="absolute top-10 left-48 z-10 bg-orange-500 text-white  p-6 w-4xl ml-80 rounded-md max-w-sm shadow-lg">
+<div class=" bg-white p-6  " id="About">
+  <div class="relative z-50 flex items-center justify-center-safe ">
+    <img src="images/Mask Group.png" alt="Real Estate Tool" class="w-6xl saturate-100 rounded-md shadow-lg" />
+      <div class="absolute top-10 -right-1  z-10 bg-orange-500 text-white  p-20  rounded-md w-[750px] h-96 shadow-lg">
     <h2 class="text-xl font-bold mb-2">No. 1 Real Estate Tool</h2>
     <p class="text-sm mb-4">
       The leading functions for professional real estate agents. All our functions are made to give the individuals
       agents the most successful listing creation.
     </p>
     <div class="flex items-center justify-between">
-      <button class="bg-white text-orange-500 text-sm font-semibold px-4 py-2 rounded-l-lg shadow">
+      <button class="bg-white text-orange-500 text-sm font-semibold px-4 py-2 w-40 rounded-bl-lg rounded-tr-lg shadow cursor-pointer">
         Learn more
       </button>
-      <img src="images/qr-code 1.png" alt="QR Code" class="w-20 h-20 bg-white rounded-md p-2" />
+      <img src="images/qr-code 1.png" alt="QR Code" class="w-40 h-40 bg-white rounded-md p-2" />
     </div>
   </div>
   </div>  
 </div>
 
-<div class=" bg-white p-12 ml-72 ">
-  <div class="relative z-50  ">
-          <div class="absolute top-10 right-48 z-10 bg-orange-500 text-white  p-6 ml-80 rounded-md w-[650px] max-w-sm shadow-lg">
+<div class=" bg-white p-6  ">
+  <div class="relative z-50 flex justify-center-safe items-center ">
+          <div class="absolute top-10  left-4 z-10 bg-orange-500 text-white  p-20  rounded-md w-[650px] h-96  shadow-lg">
     <h2 class="text-xl font-bold mb-2">No. 1 Real Estate Tool</h2>
     <p class="text-sm mb-4">
     The leading functions for professional real estate agents. All our functions are made to give the individuals agents the most successful listing creation,
      import, market analytics, professional marketing, booking, remote adverts, price indicators and so much.
     </p>
+        <div class="flex items-center justify-between">
+      <button class="bg-white text-orange-500 text-sm font-semibold px-4 py-2 w-40 rounded-bl-lg rounded-tr-lg shadow cursor-pointer">
+        Learn more
+      </button>
+          </div>
   </div>
-    <img src="images/Data-analytics-chart-laptop 1.png" alt="Real Estate Tool" class="w-3xl rounded-md shadow-lg" />
+    <img src="images/Data-analytics-chart-laptop 1.png" alt="Real Estate Tool" class="w-6xl rounded-md shadow-lg saturate-100" />
   </div>  
 </div>
 
 <!-- featured list -->
 
-<div class="flex justify-between items-center p-4 bg-white text-black">
+<div class="flex justify-between items-center p-5 bg-white text-black">
       <div class="flex gap-4 items-center p-7">
         <h2 class="text-slate-500 font-bold text-3xl" >Featured Property</h2>
       </div>
-      <div class="flex items-center cursor-pointer gap-2">
+      <div class="flex items-center cursor-pointer mr-20  gap-2">
    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
 </svg>
@@ -240,17 +252,16 @@
 
     </div>
     <!-- featured cards -->
-      <div class="grid grid-cols-3 p-12">
+      <div class="grid grid-cols-3 p-10">
         <!-- Card1 -->
-       
+        <div class="relative">
 
-        <div>
-                  <div class=" w-96">
+                  <div class=" relative w-96">
         <img src="images/Pict.png" alt="">
         </div>
-        <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
+        <div class=" absolute  w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"> <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -282,7 +293,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -312,7 +323,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -342,7 +353,7 @@
       <div class="flex gap-4 items-center p-7">
         <h2 class="text-slate-500 font-bold text-3xl" >Listed as urgent</h2>
       </div>
-      <div class="flex items-center cursor-pointer gap-2">
+      <div class="flex items-center cursor-pointer mr-20 gap-2">
    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
 </svg>
@@ -355,7 +366,7 @@
 
     </div>
     <!-- featured cards -->
-      <div class="grid grid-cols-3 p-12">
+      <div class="grid grid-cols-3 p-10">
         <!-- Card1 -->
        
 
@@ -365,7 +376,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -397,7 +408,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -427,7 +438,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -458,7 +469,7 @@
       <div class="flex gap-4 items-center p-7">
         <h2 class="text-slate-500 font-bold text-3xl" >Recently Listed</h2>
       </div>
-      <div class="flex items-center cursor-pointer gap-2">
+      <div class="flex items-center cursor-pointer mr-20 gap-2">
    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-orange-500 size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
 </svg>
@@ -471,17 +482,18 @@
 
     </div>
     <!-- featured cards -->
-      <div class="grid grid-cols-3 p-12">
+      <div class="grid grid-cols-3 p-10">
         <!-- Card1 -->
        
 
         <div>
+          
                   <div class=" w-96">
         <img src="images/Pict.png" alt="">
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -513,7 +525,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -543,7 +555,7 @@
         </div>
         <div class="w-sm bg-white rounded-xl shadow-md overflow-hidden">
   <div class="p-5 ">
-    <h2 class="text-xl font-semibold text-gray-900">Hilltruck Valley</h2>
+    <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
     <p class="text-orange-500 text-lg font-bold">$375,000</p>
     <p class="text-gray-400 text-sm mt-1"><i class="ri-map-pin-line"></i>1187 Lake Forest City, TN</p>
 
@@ -609,16 +621,20 @@
    
         <select name="" id="" class="text-black px-8 inset-shadow-sm h-10 w-44">
           <option value="" class="flex gap-2">
-              <span class="block"><img src="images/57923-1 1.png" class="w-16 h-16" alt="English" /></span>
-        English
+              <img src="images/flag-1.png" alt=""><span>English</span>
           </option>
           <option value="">
               <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
-        <p class="text-black">English</p>
+        <p class="text-black">spanish</p>
           </option>
           <option value="">
               <img src="https://flagcdn.com/gb.svg" class="w-6 h-4" alt="English" />
-        <p class="text-black">English</p>
+        <p class="text-black">Chinease</p>
+          </option>
+
+           <option value="">
+              <span class="fi fi-pk">Urdu</span>
+       
           </option>
         </select>
       
@@ -627,8 +643,8 @@
             <option value="">€ EURO</option>
             <option value="">$ DOLLAR</option>
             <option value="">£ POUNDS</option>
-            <option value="">ca$ CANADIAN</option>
-            <option value="">Rs RUPPEE</option>
+            <option value="">¥ YEN</option>
+            <option value="">PKR RUPPEE</option>
         </select>
       </div>
     </div>
@@ -636,43 +652,44 @@
 <!-- Hunt -->
  <div class=" p-12 grid gap-2">
   <h1 class="text-black font-bold">MY Housing Hunt</h1>
-  <span class="text-slate-600">About Us</span>
-  <span class="text-slate-600">Press Room</span>
-  <span class="text-slate-600">Work with Us</span>
-  <span class="text-slate-600">Market Analysis</span>
-  <span class="text-slate-600">News</span>
+  <a href="#About"><span class="text-slate-600 hover:text-orange-500 cursor-pointer">About Us</span></a>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Press Room</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Work with Us</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Market Analysis</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Proffesional Features</span>
+   <span class="text-slate-600 hover:text-orange-500 cursor-pointer">News</span>
  </div>
 
  <!-- Help -->
  <div class=" p-12 grid gap-2">
   <h1 class="text-black font-bold">Help</h1>
-  <span class="text-slate-600">FAQS</span>
-  <span class="text-slate-600">Contact</span>
-  <span class="text-slate-600">Privacy</span>
-  <span class="text-slate-600">Cookie policiy</span>
-  <span class="text-slate-600">General conditions</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer ">FAQS</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Contact</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Privacy</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Cookie policiy</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">General conditions</span>
  </div>
 
  <!-- Search -->
  <div class=" p-12 grid gap-2">
   <h1 class="text-black font-bold">Search</h1>
-  <span class="text-slate-600">Search By Distance</span>
-  <span class="text-slate-600">Search On Map</span>
-  <span class="text-slate-600">Specify Search</span>
-  <span class="text-slate-600">Search For Reservations</span>
-  <span class="text-slate-600">Search By Referance Number.</span>
+<a href="#distance"><span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search By Distance</span></a>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search On Map</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Specify Search</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search For Reservations</span>
+  <span class="text-slate-600 hover:text-orange-500 cursor-pointer">Search By Referance Number.</span>
  </div>
 <!-- get app -->
   <div class=" p-12 grid gap-2">
   <h1 class="text-black font-bold">Get App</h1>
-  <div class="w-70 h-24 bg-slate-900 rounded-2xl items-center justify-center flex">
+  <div class="w-70 h-24 bg-black rounded-2xl items-center justify-center flex">
     <img class="w-15 h-15 mr-3.5" src="images/apple 2.png" alt="">
     <div class=" ">
     <p>Download on the</p>
     <h1 class="font-bold p-1.5">App Store</h1>
       </div>
   </div>
-  <div class="w-70 h-24 bg-slate-900 rounded-2xl items-center justify-center flex">
+  <div class="w-70 h-24 bg-black rounded-2xl items-center justify-center flex">
     <img class="w-15 h-15 mr-3.5" src="images/playstore.png" alt="">
     <div class=" ">
     <p>Download on the</p>
@@ -681,6 +698,8 @@
   </div>
  
  </div>
- </div>
+</div>
+
+
   </body>
 </html>
