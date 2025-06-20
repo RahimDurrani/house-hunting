@@ -2,17 +2,14 @@ var btn1 = document.querySelector("#btn1")
 var btn2 = document.querySelector("#btn2")
 const rent = document.querySelector('#rent')
 let txt = document.querySelector('#txt')
-var flag  = 0;
 const button = document.getElementById("dropdown-button");
-  const menu = document.getElementById("dropdown-menu");
-  const selected = document.getElementById("selected-option");
+const menu = document.getElementById("dropdown-menu");
+const selected = document.getElementById("selected-option");
 var se = document.querySelector("#search")
-  const body = document.querySelector("body")
+const body = document.querySelector("body")
 var lbtn = document.querySelector("#l-btn")
 var lform = document.querySelector("#l-form")
-var sbtn = document.querySelector("s-btn")
-const cl = document.querySelector("#close")
-
+var flag  = 0;
 
 btn1.addEventListener('click', function(){
     btn1.style.backgroundColor = "#f57e16";
@@ -56,7 +53,7 @@ if (flag == 0) {
 }
 
 })
-// flag
+// flagCdn
   button.addEventListener("click", () => {
     menu.classList.toggle("hidden");
   });
@@ -92,10 +89,14 @@ lbtn.addEventListener('click',function(){
 sbtn.addEventListener('click',function(){
          lform.style.opacity = "0" 
          body.style.overflow = "auto"
+         
 })
 
 cl.addEventListener('click',function(){
   lform.style.opacity = "0" 
          body.style.overflow = "auto"
 })
+
+
+
 

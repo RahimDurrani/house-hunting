@@ -13,7 +13,7 @@
     <title>housing hunt</title>
   </head>
   <body class="text-white  " id="b">
-   <div class="bg-white text-black p-4 flex">
+   <div class="bg-white text-black p-4  flex">
   <div class="container mx-auto flex  md:flex-row justify-between items-center gap-4">
     <!-- Left Side -->
     <div class="flex flex-row sm:flex-row items-center gap-4">
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Right Side -->
-    <div class="flex  items-center gap-2 cursor-pointer">
+    <div class="flex  items-center gap-2 cursor-pointer" id="sign-btn">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 bg-orange-500 rounded-full text-white p-1" viewBox="0 0 20 20" fill="currentColor">
         <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-6 8a6 6 0 1112 0H4z" />
       </svg>
@@ -48,6 +48,8 @@
     </div>
   </div>
 </div>
+
+
  <!-- banner -->
 
    <!-- Header with Logo and Add Listing -->
@@ -69,7 +71,7 @@
 
 <!-- listing form -->
  
- <div class="fixed h-full w-full justify-center items-center -z-10 top-10 opacity-0 " id="l-form">
+ <div class="fixed h-full w-full justify-center items-center \ -z-10 top-10 opacity-0 " id="l-form">
     
   <div class="bg-orange-500   text-center py-12 px-4" >
   <!-- Heading -->
@@ -182,7 +184,7 @@
           Image preview 🏠
         </div>
       </div>
-      <div>
+      <div class="flex justify-center-safe items-center gap-3">
        <button
           type="submit"
           class="text-white bg-orange-500 border   border-orange-500 rounded-2xl w-24 h-12 hover:bg-white hover:text-orange-500 transition" id="s-btn">
@@ -226,7 +228,7 @@
       <!-- Property Type Dropdown -->
       <select
         class="rounded bg-white cursor-pointer border border-orange-500 text-orange-500 w-28 h-12">
-         <option>🏠 Home</option>
+          <option>🏠 Home</option>
           <option>🏢 Studio</option>
           <option>🛏️ 1BHK</option>
           <option>🏘️ 2BHK</option>
@@ -289,8 +291,7 @@
       </div>
     </div>
 
-    <!-- Repeat the same card structure for Card2 to Card6 -->
-    <!-- Just copy the block above 5 more times -->
+   
 
     <!-- Card2 -->
     <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
@@ -551,15 +552,17 @@
 </div>
 
 <!-- Property Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto" id="card">
   <!-- Card1 -->
-  <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+<a href="pg1.html">
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+    <img src="images/img1.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -577,15 +580,16 @@
       </div>
     </div>
   </div>
+</a>
 
 <!-- Card2 -->
-   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+    <img src="images/grand_orchard_44265.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Grand Orchard</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>DHA Defence Phase 1, Islamabad
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -606,13 +610,13 @@
 
 
 <!-- Card3 -->
-   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+    <img src="images/0007_A.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Multi Business Park</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>Faisal Hills - Executive Block, Taxila
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -634,7 +638,22 @@
 
 </div>
 
-    <!--  listed as urgent -->
+  <div class="hidden" id="card-item">
+    <div class="grid border-2 border-amber-500 w-full h-full text-orange-500 items-center justify-center" >
+   <div class="grid grid-cols-1">
+     <h1>1187 Lake Forest City</h1>
+    <h2>Hilltruck Valley</h2>
+   </div>
+    <img src="images/Pict.png" alt="">
+    <p>
+      a fully furnished 2BHK house loacted in the prime location, with all the ameitites avaliable. It comes with a great park 
+    </p>
+  </div>
+
+
+  </div>
+
+   <!-- featured cards -->
 
 <div class="flex flex-col md:flex-row justify-between items-center p-5 bg-white text-black max-w-7xl mx-auto">
   <h2 class="text-slate-500 font-bold text-3xl mb-4 md:mb-0">Featured Property</h2>
@@ -648,17 +667,16 @@
   </div>
 </div>
 
-    <!-- featured cards -->
    <!-- Property Cards -->
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
   <!-- Card1 -->
   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <img src="images/Cover_8dfffceed0.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer"> Zameen Opal </h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>Land Breeze Housing Society, Lahore
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -679,12 +697,12 @@
 
 <!-- Card2 -->
    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <img src="images/zameen_ace_homes_26973.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Zameen Ace Homes</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>DHA Defence Phase 3, Islamabad
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -980,10 +998,6 @@
     </div>
   </div>
 </footer>
-
-
-
-
 
 <script src="script.js"></script>
 
