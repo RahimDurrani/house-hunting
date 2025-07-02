@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+
+
+ <!-- Navbar -->
+  <header class="bg-orange-500 text-white p-4 flex justify-between items-center">
+   <img src="images/logo 1.png" class="w-56" alt="">
+    <button onclick="toggleSidebar()" class="text-3xl">&#9776;</button>
+  </header>
+
+  <!-- Fullscreen Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black/50 z-40 hidden" onclick="toggleSidebar()"></div>
+
+  <!-- Right Sidebar -->
+  <aside id="sidebar" class="fixed top-0 right-0 h-screen w-64 bg-white z-50 transform translate-x-full transition-transform duration-300">
+    <div class="p-4 border-b text-white bg-orange-500 text-xl font-bold flex justify-between items-center">
+      <button onclick="toggleSidebar()" class="text-2xl text-gray-500">&#10007;</button>
+        Menu
+     
+    </div>
+    <nav class="p-4 space-y-4">
+    <a href="index.html" class="block text-gray-800 hover:text-orange-500">🏠 Home</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">📋 Add your Listing</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">💬 Listings</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">👤 Your Proflie</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">⭐ Your Favourites</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">⚠️ Alerts</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">🚚 Your Packages</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">🧾 Your Payments</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">💳 Your credits</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">🔍 Your Searches</a>
+    <a href="#" class="block text-gray-800 hover:text-orange-500">🧾 Your invoices</a>   
+    <a href="#" class="block text-gray-800 hover:text-orange-500">⚙️ Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Toggle Menu -->
+  <div id="menu" class="md:hidden bg-white shadow-md p-4 hidden">
+    <a href="#" class="block py-2 text-orange-500 font-medium">Home</a>
+    <a href="#" class="block py-2 text-orange-500 font-medium">Listings</a>
+    <a href="#" class="block py-2 text-orange-500 font-medium">Plans</a>
+  </div>
+
+  <main class="max-w-6xl mx-auto mt-8 p-4 space-y-8">
+
+    <!-- Add A Listing -->
+    <div class="bg-white rounded-lg shadow p-6  border-gray-100">
+      <h2 class="text-xl font-semibold mb-4 border-b pb-2">Add A Listing</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Select the type of property</label>
+          <select class="w-full border border-gray-300 p-2 rounded hover:bg-orange-600">
+            <option class="" >Apartment</option>
+            <option class="" >Building</option>
+            <option class="" >Chateau</option>
+            <option class="" >Commerical property</option>
+            <option class="" >Country House</option>
+            <option class="" >Land</option>
+            <option class="" >Office</option>
+            <option class="" >Parking Space</option>
+            <option class="" >Storage Room</option>
+            <option class="" >Town House</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Plan</label>
+          <select class="w-full border border-gray-300 p-2 rounded">
+            <option>Select</option>
+          </select>
+        </div>
+        <div class="flex items-end ">
+          <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 hover:border cursor-pointer h-10 rounded w-full">View Plans Charts</button>
+        </div>
+      </div>
+      <div class="mt-4">
+        <label class="block text-sm font-medium mb-1">Description</label>
+        <textarea rows="4" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        <p class="text-xs text-gray-500 mt-1">2000 Characters left</p>
+      </div>
+    </div>
+
+    <!-- Common Section -->
+    <div class="bg-white rounded-lg shadow p-6">
+      <h2 class="text-xl font-semibold mb-4 border-b pb-2">Common</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <!-- Title -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Title</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="Select">
+ 
+        </div>
+
+        <!-- Transaction -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Transaction</label>
+          <div class="flex gap-4">
+            <label class="flex items-center gap-1">
+              <input class="accent-orange-500" type="radio" name="transaction" checked />
+              <span>Sale</span>
+            </label>
+            <label class="flex items-center gap-1">
+              <input class="accent-orange-500" type="radio" name="transaction" />
+              <span>Rental</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Price -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Price</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <select class="p-2">
+              <option>$</option>
+                <option>PKR</option>
+                <option>€</option>
+
+            </select>
+            <input type="text"  class="w-full p-2 outline-none" />
+          </div>
+        </div>
+
+        <!-- Bedrooms 1 -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Bedrooms</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <button onclick="changeValue('bed1', -1)" class="bg-red-500 h-12 text-white px-3 py-1">−</button>
+            <input id="bed1" type="number" value="0" class="w-full text-center p-2 outline-none" readonly />
+            <button onclick="changeValue('bed1', 1)" class="bg-red-500 h-12 text-white px-3 py-1">+</button>
+          </div>
+        </div>
+
+        <!-- Bedrooms 2 -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Bedrooms</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <button onclick="changeValue('bed2', -1)" class="bg-red-500 h-12 text-white px-3 py-1">−</button>
+            <input id="bed2" type="number" value="0" class="w-full text-center p-2 outline-none" readonly />
+            <button onclick="changeValue('bed2', 1)" class="bg-red-500 h-12 text-white px-3 py-1">+</button>
+          </div>
+        </div>
+
+        <!-- Floors -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Number of floors</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <button onclick="changeValue('floors', -1)" class="bg-red-500 h-12 text-white px-3 py-1">−</button>
+            <input id="floors" type="number" value="0" class="w-full text-center p-2 outline-none" readonly />
+            <button onclick="changeValue('floors', 1)" class="bg-red-500 h-12 text-white px-3 py-1">+</button>
+          </div>
+        </div>
+
+        <!-- Built Area -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Built Area</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <input type="number" placeholder="0" class="w-full p-2 outline-none" />
+            <select class="bg-gray-200 p-2">
+              <option>m²</option>
+              <option>f²</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Year of Construction -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Year of Construction</label>
+          <select class="w-full border border-gray-300 p-2 rounded">
+            <option>Select</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+          </select>
+        </div>
+
+        <!-- Plot Area -->
+        <div>
+          <label class="block text-sm font-medium mb-1">Plot Area (optional)</label>
+          <div class="flex items-center border border-gray-300 rounded overflow-hidden">
+            <input type="number" placeholder="0" class="w-full p-2 outline-none" />
+            <select class="bg-gray-200 p-2">
+              <option>m²</option>
+                <option>f²</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transaction Yes/No -->
+      <div class="mt-4">
+        <label class="block text-sm font-medium mb-1">Transaction</label>
+        <div class="flex gap-6 ">
+          <label class="flex items-center gap-1">
+            <input class="accent-orange-500" type="radio" name="final-trans" checked />
+            <span>Yes</span>
+          </label>
+          <label class="flex items-center gap-1 ">
+            <input class="accent-orange-500" type="radio" name="final-trans" />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+
+<!-- location -->
+    <div class="bg-white rounded-lg shadow p-6  border-gray-100">
+      <h2 class="text-xl font-semibold mb-4 border-b pb-2">Location</h2>
+<!-- left -->
+<div class="w-full flex h-96 p-16 rounded-lg overflow-hidden ">
+  <div>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47883.59136788403!2d71.54892799999999!3d34.016460800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1751441476813!5m2!1sen!2s" 
+     class="w-96 h-80 rounded-2xl border-8 border-gray-200  " loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade">
+ </iframe>  
+  </div>
+  <!-- right -->
+   <div class=" grid grid-cols-2 gap-4 p-3 ">
+    <div>
+        <!-- Country -->
+    <label class="block text-sm font-medium mb-1">Country</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="Country">
+         </div>
+         <!-- state -->
+         <div>
+    <label class="block text-sm font-medium mb-1">State</label>
+            <select name="" class="w-full border border-gray-300 p-2 rounded" id="">
+                   <option value="">KPK</option>
+                   <option value="">Punjab</option> 
+                   <option value="">Sindh</option>
+                   <option value="">Balochistan</option>
+                   <option value="">Kashmir/Gilgit</option>
+            </select>
+         </div>
+         <!-- city -->
+         <div>
+    <label class="block text-sm font-medium ">City</label>
+    <select name="" class="w-full border border-gray-300 p-2 rounded" id="" aria-placeholder="city">
+        <option value="">Peshawar</option>
+        <option value="">Lahore</option>
+        <option value="">Karachi</option>
+        <option value="">Quetta</option>
+    </select>
+         </div>
+         <!-- address -->
+         <div>
+    <label class="block text-sm font-medium ">Address</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="Address">
+         </div>
+         
+         <!-- zipcode -->
+
+           <div>
+    <label class="block text-sm font-medium ">Zip Code</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="24400">
+         </div>
+         <!-- Phoneno -->
+
+           <div>
+    <label class="block text-sm font-medium ">Phone Number</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="+92">
+         </div>
+      <!-- radio-->
+         <div class="mt-4">
+        <label class="block text-sm font-medium mb-1">Account on the address</label>
+        <div class="flex gap-6 ">
+          <label class="flex items-center gap-1">
+            <input class="accent-orange-500" type="radio" name="final-trans" checked />
+            <span>Yes</span>
+          </label>
+          <label class="flex items-center gap-1 ">
+            <input class="accent-orange-500" type="radio" name="final-trans" />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+   </div>
+</div>
+    </div>
+
+    <!-- additional info -->
+        <div class="bg-white rounded-lg shadow p-6  border-gray-100">
+      <h2 class="text-xl font-semibold mb-4 border-b pb-2">Additional Information</h2>
+            <div class="">
+                <h2 class="font-bold text-orange-500">property Features</h2>
+            </div>
+          <div class="grid grid-cols-2 p-5">
+              <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Check All</label>
+</div>
+
+    <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Uncheck All</label>
+</div>
+          </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 p-8 gap-4">
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Basement</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Swimming pool</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Family Room</label>
+</div>
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Air Conditioning</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Fitted Wardrobes</label>
+</div>
+
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Disability Features</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">lift</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Exterior</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Garden</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Terrace</label>
+</div>
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Spa/Hot tub</label>
+</div>
+
+
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Storage Room</label>
+</div>
+      </div>
+
+      <!-- showing -->
+      <div>
+        <h1 class="font-bold text-orange-500">Showing</h1>
+        <hr>
+        <p>Show that you’re able to do a digital showing of this property using, for example, Video Call, Etc</p>
+    
+        <div class="flex items-center me-4">
+    <input checked id="orange-checkbox" type="checkbox" value="" class="w-4 h-4 text-orange-500 bg-gray-100 border-gray-300 rounded-sm focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+    <label for="orange-checkbox" class="ms-2 text-sm font-medium text-gray-900 ">Digital Showing (optional)</label>
+</div>
+        
+    </div>
+    <!-- booking -->
+
+    <div class="mt-10" >
+        <h1 class="font-bold text-orange-500">Booking</h1>
+        <hr>
+         <div class="mt-4">
+        <label class="block text-sm font-medium mb-1">Account on the address</label>
+        <div class="flex gap-6 ">
+          <label class="flex items-center gap-1">
+            <input class="accent-orange-500" type="radio" name="final-trans" checked />
+            <span>Yes</span>
+          </label>
+          <label class="flex items-center gap-1 ">
+            <input class="accent-orange-500" type="radio" name="final-trans" />
+            <span>No</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+      <!-- Image Upload -->
+      <div class="flex flex-col w-full md:w-[20rem]">
+        <div class="mt-3 w-full md:w-[1050px] h-60 bg-orange-100 border-2 border-dashed border-orange-300 flex justify-center-safe items-center-safe text-orange-400 text-sm rounded">
+          <i class="ri-upload-2-fill text-3xl md:text-6xl"></i>
+           <h2 class="  md:text-3xl"><span class="text-black" >Drag & Drop Files here or</span> Browse Media</h2>
+        </div>
+      </div>
+      <!-- form -->
+      <div class="mt-7">
+      <div class="font-bold text-orange-500" >
+        Authorization
+      </div>
+           <hr>
+      <div class="grid md:grid-cols-2 grid-cols-1">
+      <!-- left -->
+       <div class="border-0 grid grid-cols-1">
+        <div class="flex p-8">
+        <h1 class="text-2xl">Sign-In</h1>
+        </div>
+        <div class="p-5">
+             <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text " class="w-72 border border-gray-300 p-2 rounded" placeholder="Name">
+            </div>    
+           <div>
+          <label class="block text-sm font-medium mb-1">Password</label>
+          <input type="password " class="w-72 border border-gray-300 p-2 rounded" placeholder="....">
+ 
+        </div>
+         <div class="flex items-start p-5">
+          <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 cursor-pointer hover:border h-10 rounded w-64">Publish Listing</button>
+        </div>
+        </div>
+
+        
+       </div>
+       <!-- right -->
+   <div class="border border-gray-400 grid grid-cols-1 bg-gray-200 mt-6 rounded">
+        <div class="flex items-center justify-center">
+        <h1 class="text-2xl" >Sign-Up</h1>
+        </div>
+        <div class="p-5">
+             <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text " class="w-full border border-gray-300 p-2 rounded" placeholder="Name">
+            </div>    
+           <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email " class="w-full border border-gray-300 p-2 rounded" placeholder="xyz@gmail.com">
+        </div>
+
+         <div>
+          <label class="block text-sm font-medium mb-1">Phone</label>
+          <input type="Phone" class="w-full border border-gray-300 p-2 rounded" placeholder="">
+        </div>
+
+         <div class="flex items-end p-5">
+          <button class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 cursor-pointer  h-10 rounded w-full">Publish Listing</button>
+        </div>
+        </div>
+
+        
+       </div>
+
+       </div>
+      </div>
+    </div>
+  </main>
+       <!-- footer -->
+  
+   <footer class="bg-white text-black w-full ">
+  
+
+  <!-- Link Grid Section -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-6 px-6 md:px-12 py-10">
+    <!-- MY Housing Hunt -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">MY Housing Hunt</h2>
+      <a href="#About" class="text-slate-600 hover:text-orange-500 block">About Us</a>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Press Room</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Work with Us</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Market Analysis</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Professional Features</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">News</span>
+    </div>
+
+    <!-- Help -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">Help</h2>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">FAQs</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Contact</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Privacy</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Cookie Policy</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">General Conditions</span>
+    </div>
+
+    <!-- Search -->
+    <div class="space-y-2">
+      <h2 class="font-bold text-lg">Search</h2>
+      <a href="#distance" class="text-slate-600 hover:text-orange-500 block">Search by Distance</a>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search on Map</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Specify Search</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search for Reservations</span>
+      <span class="text-slate-600 hover:text-orange-500 block cursor-pointer">Search by Reference Number</span>
+    </div>
+
+    <!-- Get App -->
+    <div class="space-y-4">
+      <h2 class="font-bold text-lg">Get the App</h2>
+      <!-- App Store -->
+      <div class="flex items-center bg-black rounded-2xl px-4 py-3 w-fit text-white cursor-pointer">
+        <img src="images/apple 2.png" alt="Apple" class="w-6 h-6 mr-3" />
+        <div>
+          <p class="text-xs">Download on the</p>
+          <p class="font-bold text-sm">App Store</p>
+        </div>
+      </div>
+      <!-- Play Store -->
+      <div class="flex items-center bg-black rounded-2xl px-4 py-3 w-fit text-white cursor-pointer">
+        <img src="images/playstore.png" alt="Play Store" class="w-6 h-6 mr-3" />
+        <div>
+          <p class="text-xs">Download on the</p>
+          <p class="font-bold text-sm">Play Store</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+</body>
+
+<script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+
+    function changeValue(id, delta) {
+      const input = document.getElementById(id);
+      let value = parseInt(input.value) || 0;
+      value = Math.max(0, value + delta);
+      input.value = value;
+    }
+
+
+
+    
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      const overlay = document.getElementById('overlay');
+      const isOpen = sidebar.classList.contains('translate-x-0');
+
+      if (isOpen) {
+        sidebar.classList.replace('translate-x-0', 'translate-x-full');
+        overlay.classList.add('hidden');
+      } else {
+        sidebar.classList.replace('translate-x-full', 'translate-x-0');
+        overlay.classList.remove('hidden');
+      }
+    }
+
+    // Ensure it's hidden on load
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('sidebar').classList.add('translate-x-full');
+    });
+  </script>
+
+
+</html>
