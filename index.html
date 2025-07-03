@@ -44,10 +44,11 @@
       <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 bg-orange-500 rounded-full text-white p-1" viewBox="0 0 20 20" fill="currentColor">
         <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-6 8a6 6 0 1112 0H4z" />
       </svg>
-      <span class="text-orange-500">Sign In</span>
+      <a href="listing.html"><span class="text-orange-500">Sign In</span></a>
     </div>
   </div>
 </div>
+
 
 
  <!-- banner -->
@@ -67,140 +68,12 @@
     </svg>
     <span>Add Listing</span>
   </div>
+
+
+  
+  
 </div>
 
-<!-- listing form -->
- 
- <div class="fixed h-full w-full justify-center items-center \ -z-10 top-10 opacity-0 " id="l-form">
-    
-  <div class="bg-orange-500   text-center py-12 px-4" >
-  <!-- Heading -->
-  <h1 class="text-4xl h-full w-full md:text-6xl font-bold text-white  mb-8">
-    List your Property
-  </h1>
-
-  <!-- Form -->
-  <div class="flex justify-center h-full w-full">
-    <form
-      class="bg-white p-6 rounded-lg w-full max-w-7xl flex flex-col md:flex-row md:flex-wrap items-start gap-6"
-    >
-      <!-- Mode Select -->
-      <div class="flex flex-col w-full md:w-[15rem]">
-        <label class="text-orange-500 font-semibold mb-1">Select Mode</label>
-        <select
-          class="rounded bg-white cursor-pointer border border-orange-500 text-orange-500 h-12 px-2"
-        >
-          <option>Renting</option>
-          <option>Selling</option>
-        </select>
-      </div>
-
-      <!-- Type Select -->
-      <div class="flex flex-col w-full md:w-[15rem]">
-        <label class="text-orange-500 font-semibold mb-1">Select Type</label>
-        <select
-          class="rounded bg-white cursor-pointer border border-orange-500 text-orange-500 h-12 px-2"
-        >
-          <option>🏠 Home</option>
-          <option>🏢 Studio</option>
-          <option>🛏️ 1BHK</option>
-          <option>🏘️ 2BHK</option>
-        </select>
-      </div>
-
-      <!-- Address Input -->
-      <div class="flex flex-col w-full md:flex-1">
-        <label class="text-orange-500 font-semibold mb-1">Address</label>
-        <input
-          type="text"
-          placeholder="Write your complete address"
-          class="p-3 text-sm text-orange-500 border border-orange-500 rounded w-full h-12"
-         
-        />
-      </div>
-
-  <!-- price -->
-    <div class="flex flex-col w-full md:flex-1">
-        <label class="text-orange-500 font-semibold mb-1">Price</label>
-       <input  class="p-3 text-sm text-orange-500 border border-orange-500 rounded w-full h-12" type="number">
-      </div>
-
-<div class="grid grid-cols-3 gap-3">
-       <!-- Image Upload -->
-      <div class="flex flex-col w-full md:w-[20rem]">
-        <label class="text-orange-500 font-semibold mb-2">Add Property Image</label>
-        <input
-          type="file"
-          accept="image/*"
-          class="block w-full text-sm text-orange-500
-                 file:mr-4 file:py-2 file:px-4
-                 file:rounded file:border-0
-                 file:text-sm file:font-semibold
-                 file:bg-orange-100 file:text-orange-600
-                 hover:file:bg-orange-200"
-        />
-        <!-- Optional image preview -->
-        <div class="mt-3 w-full h-40 bg-orange-100 border border-orange-300 flex items-center justify-center text-orange-400 text-sm rounded">
-          Image preview 🏠
-        </div>
-      </div>
-
-
-       <!-- Image Upload -->
-      <div class="flex flex-col w-full md:w-[20rem]">
-        <label class="text-orange-500 font-semibold mb-2">Add Property Image</label>
-        <input
-          type="file"
-          accept="image/*"
-          class="block w-full text-sm text-orange-500
-                 file:mr-4 file:py-2 file:px-4
-                 file:rounded file:border-0
-                 file:text-sm file:font-semibold
-                 file:bg-orange-100 file:text-orange-600
-                 hover:file:bg-orange-200"
-        />
-        <!-- Optional image preview -->
-        <div class="mt-3 w-full h-40 bg-orange-100 border border-orange-300 flex items-center justify-center text-orange-400 text-sm rounded">
-          Image preview 🏠
-        </div>
-      </div>
-
-
-       <!-- Image Upload -->
-      <div class="flex flex-col w-full md:w-[20rem]">
-        <label class="text-orange-500 font-semibold mb-2">Add Property Image</label>
-        <input
-          type="file"
-          accept="image/*"
-          class="block w-full text-sm text-orange-500
-                 file:mr-4 file:py-2 file:px-4
-                 file:rounded file:border-0
-                 file:text-sm file:font-semibold
-                 file:bg-orange-100 file:text-orange-600
-                 hover:file:bg-orange-200"
-        />
-        <!-- Optional image preview -->
-        <div class="mt-3 w-full h-40 bg-orange-100 border border-orange-300 flex items-center justify-center text-orange-400 text-sm rounded">
-          Image preview 🏠
-        </div>
-      </div>
-      <div class="flex justify-center-safe items-center gap-3">
-       <button
-          type="submit"
-          class="text-white bg-orange-500 border   border-orange-500 rounded-2xl w-24 h-12 hover:bg-white hover:text-orange-500 transition" id="s-btn">
-          Submitt
-        </button>
-        <button
-          type="submit"
-          class="text-white bg-orange-500 border   border-orange-500 rounded-2xl w-24 h-12 hover:bg-white hover:text-orange-500 transition" id="s-btn">
-          Close
-        </button>
-        </div>
-    </div>
-      </div>
-    </form>
-  </div>
-</div>
 
 
 <!-- Search Section -->
@@ -212,7 +85,7 @@
 
   <!-- Search Form -->
   <div class="flex justify-center">
-    <form class="bg-white    p-4 h-full w-7xl flex flex-col md:flex-row  items-center  gap-4 md:gap-6">
+    <form class="bg-white  rounded-2xl  p-4 h-full w-7xl flex flex-col md:flex-row  items-center  gap-4 md:gap-6">
       <!-- Buy / Rent Buttons -->
       <div class="flex">
         <button
@@ -266,173 +139,220 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
 
     <!-- Card1 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+       <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-
+  </div>
    
 
     <!-- Card2 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-
+  </div>
 
     <!-- Card3 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-
+  </div>
 
 
 
     <!-- Card4 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-
+  </div>
 
 
 
 
     <!-- Card5 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-
+  </div>
 
     <!-- Card6 -->
-    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-      <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
-      <div class="p-5">
-        <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-        <p class="text-orange-500 text-lg font-bold">$375,000</p>
-        <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-          <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
-        </p>
-        <div class="flex items-center justify-between text-gray-600 mt-4">
-          <div class="flex items-center gap-1">
-            <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
-            <span>2 Baths</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/Group.svg" alt="" class="w-5 h-5" />
-            <span>4 Beds</span>
-          </div>
-          <div class="flex items-center gap-1">
-            <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
-            <span>2980 sqft</span>
-          </div>
+        <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
+    <div class="p-5">
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
+      <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
+      </p>
+      <div class="flex items-center justify-between text-gray-600 mt-4">
+        <div class="flex items-center gap-1">
+          <img src="images/bathtub.svg" alt="" class="w-5 h-5" />
+          <span>2 Baths</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/Group.svg" alt="" class="w-5 h-5" />
+          <span>4 Beds</span>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="images/XMLID 874.svg" alt="" class="w-5 h-5" />
+          <span>2980 sqft</span>
         </div>
       </div>
     </div>
-    
-
+  </div>
   </div>
 </div>
 
@@ -497,6 +417,10 @@
   <button class="bg-orange-500 hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 text-white rounded px-6 py-2 w-full max-w-3xl transition-all">Draw Area on Map</button>
 </div>
 
+<div id="map">
+
+</div>
+
 <!-- Overlay Card -->
 <!-- card1 -->
 <div class=" bg-white p-6  " id="About">
@@ -557,10 +481,19 @@
 <a href="pg1.html">
 
     <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
-    <img src="images/img1.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
         <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
       </p>
@@ -584,10 +517,18 @@
 
 <!-- Card2 -->
    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
-    <img src="images/grand_orchard_44265.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/grand_orchard_44265.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img4.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Grand Orchard</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-orange-500 text-lg font-bold">$50,000 - $100,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
         <i class="ri-map-pin-line"></i>DHA Defence Phase 1, Islamabad
       </p>
@@ -611,10 +552,18 @@
 
 <!-- Card3 -->
    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
-    <img src="images/0007_A.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/0007_A.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img3.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Multi Business Park</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <p class="text-orange-500 text-lg font-bold">$375,000 - $ 400,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
         <i class="ri-map-pin-line"></i>Faisal Hills - Executive Block, Taxila
       </p>
@@ -671,7 +620,15 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
   <!-- Card1 -->
   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Cover_8dfffceed0.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/Cover_8dfffceed0.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img5.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer"> Zameen Opal </h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
@@ -697,7 +654,15 @@
 
 <!-- Card2 -->
    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/zameen_ace_homes_26973.jpg" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+    <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/zameen_ace_homes_26973.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img6.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Zameen Ace Homes</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
@@ -724,7 +689,15 @@
 
 <!-- Card3 -->
    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+  <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/Pict.png" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img7.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
       <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
       <p class="text-orange-500 text-lg font-bold">$375,000</p>
@@ -769,15 +742,26 @@
 
     <!-- featured cards -->
    <!-- Property Cards -->
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 py-10 max-w-7xl mx-auto" id="card">
   <!-- Card1 -->
-  <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+<a href="pg1.html">
+
+    <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/img2.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img1.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
+    
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Rockland Villas</h2>
+      <p class="text-orange-500 text-lg font-bold">$100,000 - $150,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>Khanpur Road, Haripur
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -795,15 +779,24 @@
       </div>
     </div>
   </div>
+</a>
 
 <!-- Card2 -->
-   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+   <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/grand_orchard_44265.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img4.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Grand Orchard</h2>
+      <p class="text-orange-500 text-lg font-bold">$50,000 - $100,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>DHA Defence Phase 1, Islamabad
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -824,13 +817,21 @@
 
 
 <!-- Card3 -->
-   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto">
-    <img src="images/Pict.png" alt="Hilltruck Valley" class="w-full h-48 object-cover" />
+   <div class="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto" >
+    <div class="group relative w-full h-64 overflow-hidden">
+  <!-- Default Image -->
+  <img src="images/0007_A.jpg" alt="Image 1"
+       class="w-full h-full object-cover group-hover:opacity-0 transition duration-500" />
+  
+  <!-- Hover Image -->
+  <img src="images/img3.jpg" alt="Image 2"
+       class="absolute top-0 left-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition duration-500" />
+</div>
     <div class="p-5">
-      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Hilltruck Valley</h2>
-      <p class="text-orange-500 text-lg font-bold">$375,000</p>
+      <h2 class="text-xl font-semibold text-gray-900 cursor-pointer">Multi Business Park</h2>
+      <p class="text-orange-500 text-lg font-bold">$375,000 - $ 400,000</p>
       <p class="text-gray-400 text-sm mt-1 flex items-center gap-1">
-        <i class="ri-map-pin-line"></i>1187 Lake Forest City, TN
+        <i class="ri-map-pin-line"></i>Faisal Hills - Executive Block, Taxila
       </p>
       <div class="flex items-center justify-between text-gray-600 mt-4">
         <div class="flex items-center gap-1">
@@ -851,6 +852,21 @@
 
 
 </div>
+
+  <div class="hidden" id="card-item">
+    <div class="grid border-2 border-amber-500 w-full h-full text-orange-500 items-center justify-center" >
+   <div class="grid grid-cols-1">
+     <h1>1187 Lake Forest City</h1>
+    <h2>Hilltruck Valley</h2>
+   </div>
+    <img src="images/Pict.png" alt="">
+    <p>
+      a fully furnished 2BHK house loacted in the prime location, with all the ameitites avaliable. It comes with a great park 
+    </p>
+  </div>
+
+
+  </div>
 
 
     <!-- advertisment -->
@@ -998,6 +1014,11 @@
     </div>
   </div>
 </footer>
+
+
+
+
+
 
 <script src="script.js"></script>
 

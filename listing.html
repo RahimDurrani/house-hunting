@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="src/output.css">
     <link rel="icon" href="images/favicon.png">
 </head>
-<body>
+<body class="bg-gray-100">
 
 
  <!-- Navbar -->
@@ -26,7 +26,7 @@
   <!-- Right Sidebar -->
   <aside id="sidebar" class="fixed top-0 right-0 h-screen w-64 bg-white z-50 transform translate-x-full transition-transform duration-300">
     <div class="p-4 border-b text-white bg-orange-500 text-xl font-bold flex justify-between items-center">
-      <button onclick="toggleSidebar()" class="text-2xl text-gray-500">&#10007;</button>
+      <button onclick="toggleSidebar()" class="text-2xl text-gray-500">&times;</button>
         Menu
      
     </div>
@@ -39,10 +39,15 @@
     <a href="#" class="block text-gray-800 hover:text-orange-500">⚠️ Alerts</a>
     <a href="#" class="block text-gray-800 hover:text-orange-500">🚚 Your Packages</a>
     <a href="#" class="block text-gray-800 hover:text-orange-500">🧾 Your Payments</a>
-    <a href="#" class="block text-gray-800 hover:text-orange-500">💳 Your credits</a>
+    <a href="pricing.html" class="block text-gray-800 hover:text-orange-500">💳 Pricing</a>
     <a href="#" class="block text-gray-800 hover:text-orange-500">🔍 Your Searches</a>
     <a href="#" class="block text-gray-800 hover:text-orange-500">🧾 Your invoices</a>   
     <a href="#" class="block text-gray-800 hover:text-orange-500">⚙️ Settings</a>
+  <div class="bg-orange-500 text-white hover:bg-white hover:text-orange-500 cursor-pointer hover:border flex items-center justify-center h-11 rounded">
+      <button >
+        <i class="ri-shut-down-line"></i>LogOut
+    </button>
+  </div>
     </nav>
   </aside>
 
@@ -229,11 +234,9 @@
     <div class="bg-white rounded-lg shadow p-6  border-gray-100">
       <h2 class="text-xl font-semibold mb-4 border-b pb-2">Location</h2>
 <!-- left -->
-<div class="w-full flex h-96 p-16 rounded-lg overflow-hidden ">
+<div class="w-56 md:w-full flex h-96 p-16  rounded-lg overflow-hidden ">
   <div>
-
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47883.59136788403!2d71.54892799999999!3d34.016460800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1751441476813!5m2!1sen!2s" 
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d47883.59136788403!2d71.54892799999999!3d34.016460800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1751441476813!5m2!1sen!2s" 
      class="w-96 h-80 rounded-2xl border-8 border-gray-200  " loading="lazy"
     allowfullscreen
     referrerpolicy="no-referrer-when-downgrade">
@@ -450,7 +453,7 @@
             </div>    
            <div>
           <label class="block text-sm font-medium mb-1">Password</label>
-          <input type="password " class="w-72 border border-gray-300 p-2 rounded" placeholder="....">
+          <input type="password " class="w-72 border border-gray-300 p-2 rounded" placeholder="...." >
  
         </div>
          <div class="flex items-start p-5">
@@ -553,44 +556,8 @@
   </div>
 </footer>
 
+
     
 </body>
-
-<script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden');
-    }
-
-    function changeValue(id, delta) {
-      const input = document.getElementById(id);
-      let value = parseInt(input.value) || 0;
-      value = Math.max(0, value + delta);
-      input.value = value;
-    }
-
-
-
-    
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const overlay = document.getElementById('overlay');
-      const isOpen = sidebar.classList.contains('translate-x-0');
-
-      if (isOpen) {
-        sidebar.classList.replace('translate-x-0', 'translate-x-full');
-        overlay.classList.add('hidden');
-      } else {
-        sidebar.classList.replace('translate-x-full', 'translate-x-0');
-        overlay.classList.remove('hidden');
-      }
-    }
-
-    // Ensure it's hidden on load
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('sidebar').classList.add('translate-x-full');
-    });
-  </script>
-
-
+<script src="listing.js"></script>
 </html>

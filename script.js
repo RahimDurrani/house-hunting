@@ -10,7 +10,7 @@ const body = document.querySelector("body")
 var lbtn = document.querySelector("#l-btn")
 var lform = document.querySelector("#l-form")
 var flag  = 0;
-
+//for active links
 btn1.addEventListener('click', function(){
     btn1.style.backgroundColor = "#f57e16";
     btn1.style.color="white"    
@@ -93,10 +93,9 @@ sbtn.addEventListener('click',function(){
 })
 
 cl.addEventListener('click',function(){
-  lform.style.opacity = "0" 
+  lform.style.opacity = "1" 
          body.style.overflow = "auto"
 })
-
 
 
 
